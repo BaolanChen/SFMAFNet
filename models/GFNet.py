@@ -536,7 +536,6 @@ if __name__ == '__main__':
     n_parameters = sum(p.numel() for p in gfnet_h_s.parameters())
     print('number of params:', n_parameters/1e6)
     inputs = torch.randn(1, 3, 224, 224)
-    # 如何导入预训练模型参数
 
     res = gfnet_h_s(inputs)
     print("res.size:", res.size())
